@@ -18,6 +18,16 @@ If all looks good
 ```sh
 terraform apply
 ```
+#### Output
+The elastic IP assigned to the instance will be output
+```sh
+master_elastic_ip = x.x.x.x
+```
+Use the ip to ssh into the server
+```sh
+ssh -i path/to/key.pem ubuntu@x.x.x.x
+```
+Hit the IP address in a browser to see the nginx default screen popup
 
 ### Teardown
 ```sh
